@@ -1,0 +1,255 @@
+<!------------------------welcome to shoppingpage.html compulsory task----------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Sets the character encoding and viewport settings for responsive design -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Food Store</title>
+
+  <!-- Bootstrap CSS for responsive, mobile-first layout and styling -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Adds a hover effect to scale product images slightly */
+    .product-img {
+      transition: transform 0.3s ease; /* Smooth transition on hover */
+      width: 100%; /* Ensures images take up full width of container */
+      max-height: 200px; /* Limits height to create uniformity */
+      object-fit: cover; /* Crops the image to fit within dimensions */
+    }
+
+    .product-img:hover {
+      transform: scale(1.1); /* Scales the image slightly on hover */
+    }
+
+    /* Styles the footer logo */
+    .footer-logo {
+      width: 50px; /* Sets a fixed width for the logo */
+      margin-right: 10px; /* Adds space to the right of the logo */
+    }
+
+    /* Ensures each card takes up the full height available for alignment */
+    .card {
+      height: 100%;
+    }
+
+    /* Styles for the star ratings, using gold color for visual appeal */
+    .stars {
+      color: #FFD700; /* Gold color for stars */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Store Header Section -->
+<header class="bg-dark text-white text-center py-3">
+  <!-- Store name -->
+  <h1>Amani Fruits and Veg Mini Store</h1>
+  <!-- Brief description of the store's service -->
+  <p>Fruits and veg delivered to your doorstep!</p>
+</header>
+
+<!-- Products Section -->
+<section class="container my-5">
+  <!-- Bootstrap grid layout: rows with 1, 2, or 4 columns depending on screen size -->
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+    <!-- Product Cards with descriptions, prices, and ratings -->
+
+    <!-- Product 1 - Apple -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="apples.png" alt="Apple" class="card-img-top product-img">
+        <div class="card-body">
+          <h5 class="card-title">Apple</h5>
+          <p class="card-text">Granny smith apples.</p>
+          <p class="card-text">R20.00 Per, ~150g</p>
+          <p class="stars">⭐⭐⭐⭐⭐</p> <!-- Star rating displayed in text format -->
+          <button class="btn btn-primary">Buy</button> <!-- "Buy" button for purchasing -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 - Banana -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="banana.png" alt="Banana" class="card-img-top product-img">
+        <div class="card-body">
+          <h5 class="card-title">Banana</h5>
+          <p class="card-text">Bananas.</p>
+          <p class="card-text">R10.00 Per, ~120g</p>
+          <p class="stars">⭐⭐⭐⭐</p>
+          <button class="btn btn-primary">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 - Bread -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="SASKO-BREAD.jpg" alt="Bread" class="card-img-top product-img">
+        <div class="card-body">
+          <h5 class="card-title">Bread</h5>
+          <p class="card-text">Sasko whole wheat brown bread.</p>
+          <p class="card-text">24.35 </p>
+          <p class="stars">⭐⭐⭐⭐⭐</p>
+          <button class="btn btn-primary">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4 - Cheese -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="clover cheese.jpg" alt="Cheese" class="card-img-top product-img">
+        <div class="card-body">
+          <h5 class="card-title">Cheese</h5>
+          <p class="card-text">Creamy Clover cheese pack, 200g.</p>
+          <p class="card-text">R55.20.00 </p>
+          <p class="stars">⭐⭐⭐⭐</p>
+          <button class="btn btn-primary">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 5 - Milk -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="milk-6-pack..jpg" alt="Milk" class="card-img-top product-img">
+        <div class="card-body">
+          <h5 class="card-title">Milk</h5>
+          <p class="card-text">Fresh milk.</p>
+          <p class="card-text">R60.00 Six pack</p>
+          <p class="stars">⭐⭐⭐⭐⭐</p>
+          <button class="btn btn-primary">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 6 - Eggs -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="eggs.jpg" alt="Eggs" class="card-img-top product-img">
+        <div class="card-body">
+          <h5 class="card-title">Eggs</h5>
+          <p class="card-text">Free-range eggs Six pack.</p>
+          <p class="card-text">R35.30 each,</p>
+          <p class="stars">⭐⭐⭐⭐</p>
+          <button class="btn btn-primary">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 7 - Orange -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="oranges.jpeg" alt="Orange" class="card-img-top product-img">
+        <div class="card-body">
+          <h5 class="card-title">Orange</h5>
+          <p class="card-text">Oranges, full of vitamin C.</p>
+          <p class="card-text">R14.34 Per, ~180g</p>
+          <p class="stars">⭐⭐⭐⭐⭐</p>
+          <button class="btn btn-primary">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 8 - Chicken Breast -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="country fair.jpeg" alt="Chicken Breast" class="card-img-top product-img">
+        <div class="card-body">
+          <h5 class="card-title">Chicken Breast</h5>
+          <p class="card-text">Lean chicken breast.</p>
+          <p class="card-text">R99.99 per kg</p>
+          <p class="stars">⭐⭐⭐⭐</p>
+          <button class="btn btn-primary">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 9 - Carrot -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="carrots.jpg" alt="Carrot" class="card-img-top product-img">
+        <div class="card-body">
+          <h5 class="card-title">Carrot</h5>
+          <p class="card-text">Fresh carrots.</p>
+          <p class="card-text">R19.99 Per, ~100g</p>
+          <p class="stars">⭐⭐⭐⭐</p>
+          <button class="btn btn-primary">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 10 - Potato -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="potato.jpg" alt="Potato" class="card-img-top product-img">
+        <div class="card-body">
+          <h5 class="card-title">Potato</h5>
+          <p class="card-text">potatoes.</p>
+          <p class="card-text">R20.00 Per ~200g</p>
+          <p class="stars">⭐⭐⭐⭐⭐</p>
+          <button class="btn btn-primary">Buy</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer with Contact Form -->
+<footer class="bg-light text-dark py-4">
+  <div class="container">
+    <!-- Footer content with company logo and contact form -->
+    <div class="d-flex align-items-center">
+      <!-- Placeholder for the company logo -->
+      <img src="logo.jpeg" alt="Company Logo" class="footer-logo me-3">
+
+      <!-- Horizontal contact form -->
+      <form class="row g-2 flex-grow-1 align-items-center">
+        <!-- Name field -->
+        <div class="col-md-3">
+          <input type="text" class="form-control" placeholder="Your Name" aria-label="Name">
+        </div>
+
+        <!-- Cell phone number field -->
+        <div class="col-md-3">
+          <input type="tel" class="form-control" placeholder="Cell Phone Number" aria-label="Cell Phone Number">
+        </div>
+
+        <!-- Home address field -->
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="Delivery Address" aria-label="Delivery Address">
+        </div>
+
+        <!-- Submit button -->
+        <div class="col-md-2">
+          <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JavaScript Bundle for interactive components -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<!--- Explanation:
+1.This  code gives a clear overview of each section and element’s purpose,
+2. This code is structured with descriptions, prices, and ratings for each product card
+in a grid layout.
+3.This footer layout  contains classes (container, d-flex align-items-center)
+which provides a clean look for collecting customer contact details.
+4. i Have attached JPG imageS to this file, Please ensure They are  saved in the same file
+with shoppingpage.html for  image   appearance.
+--->
+
+<!-----------------------------------END------------------------------------------------------>
+
+
